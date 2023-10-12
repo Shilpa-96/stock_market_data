@@ -1,0 +1,115 @@
+body{
+    background: url("background.jpg");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem;
+}
+main.container {
+    margin:auto;
+    width: 700px;
+    background-color: rgba(255, 253, 253, 0.2);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.table-header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.table-header h1{
+    font-size: 40px !important;
+}
+.table-body {
+    width: 95%;
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+}
+
+table {
+    width: 100%;
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(170, 240, 228);
+}
+thead th {
+    text-transform: capitalize;
+    background-color: rgb(170, 240, 228);
+    
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid #acaaaa;
+    font-weight: bold;
+    transition: 0.1s;
+}
+tr:hover{
+    transform: scale(1.02);
+    background-color: #e4e2cc;
+}
+
+
+.green-close .close{
+    color: green;
+}
+.red-close .close{
+    color: red;
+}
+
+.green-open .open{
+    color: green;
+}
+
+.red-open .open{
+    color: red;
+}
+
+.buttons{
+    text-align: center;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+button{
+    padding: .3rem 1rem;
+    margin: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+
+@media only screen and (max-width:600px) {
+
+    main.container {
+        width: 500px;
+    }
+}
+@media only screen and (max-width:450px) {
+    .table-header h1 {
+           font-size: 25px !important;
+        }
+table,
+th,
+td {
+    padding: .3rem;
+}
+main.container {
+    width: 340px;
+}
+}
